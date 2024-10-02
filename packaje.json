@@ -1,0 +1,39 @@
+{
+  "name": "eslint-config-airbnb-flat",
+  "version": "0.0.1",
+  "description": "Airbnb's ESLint flat config with TypeScript support",
+  "license": "MIT",
+  "author": "oitaisto",
+  "homepage": "https://github.com/oitaisto/eslint-config-airbnb-flat",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oitaisto/eslint-config-airbnb-flat.git"
+  },
+  "bugs": {
+    "url": "https://github.com/oitaisto/eslint-config-airbnb-flat/issues"
+  },
+  "keywords": [
+    "airbnb",
+    "config",
+    "es2015",
+    "es2016",
+    "es2017",
+    "es2018",
+    "eslint",
+    "eslintconfig",
+    "javascript",
+    "styleguide",
+    "typescript",
+    "flat"
+  ],
+  "files": [
+    "lib",
+    "index.js"
+  ],
+  "main": "./index.js",
+  "exports": {
+    ".": {
+      "import": "./index.js"
+    }
+  }
+}
