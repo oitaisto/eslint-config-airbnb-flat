@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-airbnb-flat",
+  "name": "@oitaisto/eslint-config-airbnb-flat",
   "version": "0.0.1",
   "description": "Airbnb's ESLint flat config with TypeScript support",
   "license": "MIT",
