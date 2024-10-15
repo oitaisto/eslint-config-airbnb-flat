@@ -1,6 +1,6 @@
 {
   "name": "@oitaisto/eslint-config-airbnb-flat",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Airbnb's ESLint flat config with TypeScript support",
   "license": "MIT",
   "author": "oitaisto",
@@ -31,6 +31,7 @@
     "index.js"
   ],
   "main": "./index.js",
+  "type": "module",
   "exports": {
     ".": {
       "import": "./index.js"

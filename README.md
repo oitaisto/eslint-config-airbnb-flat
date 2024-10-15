@@ -18,7 +18,7 @@ Within your `eslint.config.js` file:
 
 ```javascript
 import tsEslint from 'typescript-eslint';
-import airBnBRules from 'eslint-config-airbnb-flat';
+import airBnBRules from '@oitaisto/eslint-config-airbnb-flat';
 
 export default [
   {
