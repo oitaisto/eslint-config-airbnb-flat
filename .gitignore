@@ -5,6 +5,15 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
+# Vite
+dist/
+.vite/
+.vite-cache/
+
+# Vitest
+coverage/
+.vitest/
+
 # TypeScript
 *.tsbuildinfo
 

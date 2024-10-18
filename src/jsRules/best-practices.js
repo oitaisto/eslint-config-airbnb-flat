@@ -359,7 +359,7 @@ const bestPractices = {
   // https://eslint.org/docs/rules/no-void
   'no-void': 'error',
 
-  // disallow usage of configurable warning terms in comments: e.g. todo
+  // disallow usage of configurable warning terms in comments: e.g.
   // https://eslint.org/docs/rules/no-warning-comments
   'no-warning-comments': ['off', { terms: ['todo', 'fixme', 'xxx'], location: 'start' }],
 

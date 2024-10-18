@@ -1,4 +1,4 @@
-# eslint-config-airbnb-flat
+# @oitaisto/eslint-config-airbnb-flat
 
 Enhances Airbnb's ESLint config with TypeScript support
 
@@ -9,7 +9,7 @@ This package is an attempt to adapt the JS and TS rules from [eslint-config-airb
 ### 1) Install dependencies (and peer dependencies)
 
 ```shell
-npm install eslint-config-airbnb-flat @typescript-eslint --save-dev
+npm install @oitaisto/eslint-config-airbnb-flat @typescript-eslint eslint-plugin-import confusing-browser-globals --save-dev
 ```
 
 ### 2) Configure ESLint
@@ -17,10 +17,13 @@ npm install eslint-config-airbnb-flat @typescript-eslint --save-dev
 Within your `eslint.config.js` file:
 
 ```javascript
+import importPlugin from 'eslint-plugin-import';
 import tsEslint from 'typescript-eslint';
 import airBnBRules from '@oitaisto/eslint-config-airbnb-flat';
 
 export default [
+  importPlugin.flatConfigs.recommended,
+  airBnBRules.config.js,
   {
     files: ['**/*.js', '**/*.jsx'],
     rules: {

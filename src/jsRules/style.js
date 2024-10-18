@@ -1,13 +1,11 @@
 const style = {
   // enforce line breaks after opening and before closing array brackets
   // https://eslint.org/docs/rules/array-bracket-newline
-  // TODO: enable? semver-major
-  'array-bracket-newline': ['off', 'consistent'], // object option alternative: { multiline: true, minItems: 3 }
+  'array-bracket-newline': ['error', 'consistent'], // object option alternative: { multiline: true, minItems: 3 }
 
   // enforce line breaks between array elements
   // https://eslint.org/docs/rules/array-element-newline
-  // TODO: enable? semver-major
-  'array-element-newline': ['off', { multiline: true, minItems: 3 }],
+  'array-element-newline': ['error', { multiline: true, minItems: 3 }],
 
   // enforce spacing inside array brackets
   'array-bracket-spacing': ['error', 'never'],
@@ -96,12 +94,11 @@ const style = {
 
   // enforces use of function declarations or expressions
   // https://eslint.org/docs/rules/func-style
-  // TODO: enable
-  'func-style': ['off', 'expression'],
+  'func-style': ['error', 'declaration'],
 
   // require line breaks inside function parentheses if there are line breaks between parameters
   // https://eslint.org/docs/rules/function-paren-newline
-  'function-paren-newline': ['error', semver.satisfies(eslintPkg.version, '>= 6') ? 'multiline-arguments' : 'consistent'],
+  'function-paren-newline': ['error', 'consistent'],
 
   // disallow specified identifiers
   // https://eslint.org/docs/rules/id-denylist
@@ -165,7 +162,6 @@ const style = {
 
   // enforce position of line comments
   // https://eslint.org/docs/rules/line-comment-position
-  // TODO: enable?
   'line-comment-position': ['off', {
     position: 'above',
     ignorePattern: '',
@@ -239,8 +235,7 @@ const style = {
 
   // require multiline ternary
   // https://eslint.org/docs/rules/multiline-ternary
-  // TODO: enable?
-  'multiline-ternary': ['off', 'never'],
+  'multiline-ternary': ['error', 'always-multiline'],
 
   // require a capital letter for constructors
   'new-cap': ['error', {

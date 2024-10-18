@@ -1,9 +1,9 @@
-import bestPractices from '../jsRules/best-practices';
-import errors from '../jsRules/errors';
-import es6 from "../jsRules/es6";
-import imports from '../jsRules/imports';
-import style from '../jsRules/style';
-import variables from '../jsRules/variables';
+import bestPractices from '../jsRules/best-practices.js';
+import errors from '../jsRules/errors.js';
+import es6 from "../jsRules/es6.js";
+import imports from '../jsRules/imports.js';
+import style from '../jsRules/style.js';
+import variables from '../jsRules/variables.js';
 
 const tsRules = {
   // Replace Airbnb 'brace-style' rule with '@typescript-eslint' version

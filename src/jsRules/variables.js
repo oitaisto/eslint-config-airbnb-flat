@@ -1,3 +1,5 @@
+import confusingBrowserGlobals from 'confusing-browser-globals';
+
 const variables = {
   // enforce or disallow variable initializations at definition
   'init-declarations': 'off',

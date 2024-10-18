@@ -1,10 +1,25 @@
 {
   "name": "@oitaisto/eslint-config-airbnb-flat",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Airbnb's ESLint flat config with TypeScript support",
   "license": "MIT",
   "author": "oitaisto",
   "homepage": "https://github.com/oitaisto/eslint-config-airbnb-flat",
+  "scripts": {
+    "build": "vite build"
+  },
+  "dependencies": {
+    "confusing-browser-globals": "^1.0.11",
+    "eslint-plugin-import": "^2.31.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "@types/node": "^22.7.6",
+    "vite": "^5.4.9"
+  },
+  "peerDependencies": {
+    "eslint-plugin-import": "^2.31.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/oitaisto/eslint-config-airbnb-flat.git"
@@ -27,14 +42,13 @@
     "flat"
   ],
   "files": [
-    "lib",
-    "index.js"
+    "dist"
   ],
-  "main": "./index.js",
+  "main": "dist/index.js",
   "type": "module",
   "exports": {
     ".": {
-      "import": "./index.js"
+      "import": "./dist/index.js"
     }
   }
 }
